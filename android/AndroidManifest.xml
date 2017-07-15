@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.caatinga"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Recifegamesthemes" >
+        <activity
+            android:name="com.caatingadigital.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.caatingadigital.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.quiz.HomeActivity"
+            android:label="@string/quiz_recifense" >
+        </activity>
+        <activity
+            android:name="com.quiz.QuizActivity"
+            android:label="@string/quiz_recifense" >
+        </activity>
+        <activity
+            android:name="com.quiz.QuizEndActivity"
+            android:label="@string/quiz_recifense" >
+        </activity>
+        <activity
+            android:name="com.forca.HangManActivity"
+            android:label="@string/forca_lampiao" >
+        </activity>
+        <activity
+            android:name="com.forca.HangActivity"
+            android:label="@string/forca_lampiao" >
+        </activity>
+        <activity
+            android:name="com.velha.PlayersActivity"
+            android:label="@string/velha" >
+        </activity>
+        <activity
+            android:name="com.velha.GameActivity"
+            android:label="@string/velha" >
+        </activity>
+        <activity
+            android:name="com.velha.StatsActivity"
+            android:label="@string/velha" >
+        </activity>
+        <activity
+            android:name="com.memoria.MenuActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/memoria_cordel"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoria.MemoryGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/memoria_cordel"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoria.ScoreboardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/memoria_cordel"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.memoria.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/memoria_cordel"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.imgquiz.MainMenuActivity"
+            android:label="@string/recife_img" >
+        </activity>
+        <activity
+            android:name="com.imgquiz.ImgQuizActivity"
+            android:label="@string/recife_img" >
+        </activity>
+        <activity
+            android:name="com.imgquiz.ImgAnswerActivity"
+            android:label="@string/recife_img" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

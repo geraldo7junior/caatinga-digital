@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent" 
+              android:orientation="vertical"
+              android:background="@drawable/backgrounddois"
+              android:id="@+id/layout" >
+             
+    <TextView
+        android:id="@+id/tvNumCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:id="@+id/logoquiz"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:horizontalSpacing="20dp"
+	    android:verticalSpacing="20dp"
+	    android:numColumns="3"
+	    android:stretchMode="columnWidth"
+	    tools:context=".ImgQuizActivity" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<h1>Caatinga Digital</h1>
+<h2>Editar Denúncia</h2>
+<div class="row" ng-controller='ReportEditControler'>
+  <div class="col-md-6">
+  
+  <form novalidate ng-repeat="report in ReportDetail" name="AddNewForm" id="add-new-form" method="post" action="">
+    <input type="hidden" ng-model="report.id" value="{{report.id}}" />
+     <div class="form-group">
+      <label>Local</label>
+      <input class="form-control" type="text" ng-model="report.Place" value="{{report.Place}}" required />
+    </div>
+    <div class="form-group">
+      <label>Data</label>
+      <input class="form-control" type="text" ng-model="report.Datet" value="{{report.Datet}}" required />
+    </div>
+     <div class="form-group">
+      <label>Descrição</label>
+      <input class="form-control" type="text" ng-model="report.Description" value="{{report.Description}}" required />
+    </div>
+    <div class="form-group">
+      <label>Contato</label>
+      <input class="form-control" type="text" ng-model="report.Contact" value="{{report.Contact}}" required />
+    </div>
+    <div class="form-group">
+      <label>Status</label>
+      <input class="form-control" type="text" ng-model="report.Status" value="{{report.Status}}" required />
+    </div>
+
+    <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(report)" id="add-new-btn" ng-click="Update_Report(report)">Editar
+    </button>
+    <button class="btn btn-danger" ng-click="Delete_Report(report)">Deletar</button>
+    <a href="#/" class="btn btn-warning">Cancelar</a>
+
+  </form>
+
+</div>
+</div>

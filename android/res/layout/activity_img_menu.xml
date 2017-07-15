@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/backgrounddois"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:src="@drawable/header" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="play"
+        android:paddingTop="0dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/btnjogarforca" />
+    
+
+      <LinearLayout xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:gravity="center">
+
+     </LinearLayout>
+
+</LinearLayout>

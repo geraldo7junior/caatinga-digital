@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/backgrounddois"
+	android:id="@+id/home_root_layout">
+	<RelativeLayout
+		android:id="@+id/home_top_relative_layout"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_above="@+id/home_number_questions_relative_layout"
+		android:layout_marginBottom="30dip">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/headerdois"
+			android:textColor="#000000"
+			android:id="@+id/txt_home_app_name_large"
+			android:textSize="50dip" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/home_number_questions_relative_layout"
+		android:layout_centerInParent="true">
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/txt_number_of_questions"
+			android:textColor="#000000"
+			android:text="@string/number_of_questions"
+			android:layout_centerVertical="true"></TextView>
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@+id/txt_number_of_questions"
+			android:id="@+id/input_number_of_questions"
+			android:text="20"
+			android:maxLines="1"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dip"
+			android:width="50dip"
+			android:digits="0123456789"
+			android:inputType="number"
+			android:imeOptions="actionDone"></EditText>
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/home_bottom_relative_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/home_number_questions_relative_layout"
+		android:layout_marginTop="32dip">
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:text="@string/start_quiz"
+			android:id="@+id/btn_start_quiz"
+			android:clickable="true" />
+	</RelativeLayout>
+</RelativeLayout>

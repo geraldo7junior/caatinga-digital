@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgrounddois"
+    android:gravity="center"
+    android:orientation="vertical" >
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="center" >
+    
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+     </LinearLayout>
+    
+    
+      <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+     
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ibtnQuiz"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/quiz"
+            android:src="@drawable/quiz" />
+
+        <ImageButton
+            android:id="@+id/ibtnMemoria"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/memoria"
+            android:src="@drawable/memoria" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+      
+                <ImageButton
+            android:id="@+id/ibtimgquiz"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             android:layout_marginRight="40dp"
+            android:contentDescription="@string/velha"
+            android:src="@drawable/imgquiz" />
+
+        <ImageButton
+            android:id="@+id/ibtnForca"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/forca"
+            android:src="@drawable/forca" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+          <ImageButton
+            android:id="@+id/ibtnVelha"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             android:layout_marginRight="40dp"
+            android:contentDescription="@string/velha"
+            android:src="@drawable/velha" />
+
+        <ImageButton
+            android:id="@+id/ibtncaca"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/forca"
+            android:src="@drawable/caca" />
+    </LinearLayout>
+    
+          <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/ibtncruzada"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             android:layout_marginRight="40dp"
+            android:contentDescription="@string/velha"
+            android:src="@drawable/cruzada" />
+
+        <ImageButton
+            android:id="@+id/ibtnmais"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/forca"
+            android:src="@drawable/mais" />
+    </LinearLayout>
+    
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

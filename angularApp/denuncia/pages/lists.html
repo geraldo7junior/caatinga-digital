@@ -1,0 +1,28 @@
+<h1>Caatinga Digital</h1>
+<h2>Denúncias Ambientais</h2>
+
+<div ng-controller="ReportListControler">
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Local</th>
+      <th>Data</th>
+      <th>Descrição</th>
+      <th>Contato</th>
+      <th>Status</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="res in reports | orderBy: 'Place'">
+      <td>{{res.Place}}</td>
+      <td>{{res.Datet}}</td>
+      <td>{{res.Description}}</td>
+      <td>{{res.Contact}}</td>
+      <td>{{res.Status}}</td>
+      <td><a href="#/UpdateReport/{{res.id}}" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></button></td>
+    </tr>
+  </tbody>
+</table>
+<a class="btn btn-primary" href="#/NewReport">Enviar Nova Denúncia</a>
+</div>
